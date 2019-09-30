@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    <input type="text" name="qqch" value="" />
+
+    <input id="gO" type="submit" value="GO" />
+
+</form>
+
+</body>
+<script>
+    txt=document.getElementById('qqch')
+    go=document.getElementById('gO')
+    function alert() {
+        alert('vous me dite : ', txt)
+    }
+    if(txt.value!==""){
+        alert
+        txt.addEventListener('textchange',alert)
+    }
+</script>
+</html>

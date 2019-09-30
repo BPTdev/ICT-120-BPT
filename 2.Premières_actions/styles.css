@@ -1,0 +1,15 @@
+div {
+    padding : 5px;
+    margin: 5px;
+    border: solid 1px black;
+    width: fit-content;
+}
+.cssbleu{
+    background: blue;
+}
+.csstrace{
+    text-decoration: line-through ;
+}
+.csshover{
+    font-family: Arial;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premiers pas en js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="cmdbleu">Cette div doit avoir un fond bleu après qu'on lui aie cliqué dessus</div>
+<div id="cmdtrace">Cette div avoir son texte 'tracé' après qu'on lui aie cliqué dessus</div>
+<div id="hvrarial">Ce texte doit être en police Arial quand la souris le survole</div>
+<div>
+    Cette div doit dire 'YES' en blanc sur fond vert quand les deux checkboxes dessous sont cochées.<br>
+    A ce moment les checkboxes doivent disparaître<br>
+    <input type="checkbox"></input><input type="checkbox"></input>
+</div>
+<div>
+    Quand on clique sur ce texte, ça détruit
+    <div>cette div</div>
+</div>
+
+</body>
+<script>
+    bleu=document.getElementById('cmdbleu')
+    function funbleu() {
+        bleu.classList.add('cssbleu')
+    }
+    bleu.addEventListener('click',funbleu)
+</script>
+<script>
+    trace=document.getElementById('cmdtrace')
+    function funtrace() {
+        trace.classList.add('csstrace')
+    }
+    trace.addEventListener('click',funtrace)
+</script>
+<script>
+    hover=document.getElementById('hvrarial')
+    function funhover() {
+        hover.classList.add('csshover')
+    }
+    hover.addEventListener('mouseover',funhover)
+</script>
+</html>

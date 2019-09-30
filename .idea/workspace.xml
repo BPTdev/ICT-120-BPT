@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -29,10 +29,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.User-Defined File Types" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-120-BPT" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,6 +73,10 @@
       <workItem from="1568294985480" duration="1977000" />
       <workItem from="1568296989389" duration="201000" />
       <workItem from="1568297201398" duration="1246000" />
+      <workItem from="1569239945880" duration="1689000" />
+      <workItem from="1569241660009" duration="440000" />
+      <workItem from="1569242113856" duration="4687000" />
+      <workItem from="1569504411776" duration="4769000" />
     </task>
     <servers />
   </component>
