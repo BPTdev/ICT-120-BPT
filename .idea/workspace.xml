@@ -18,6 +18,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -29,13 +30,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Exercice" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.User-Defined File Types" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-120-BPT\Exercice" />
       <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-120-BPT" />
     </key>
   </component>
@@ -59,6 +61,9 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -77,6 +82,7 @@
       <workItem from="1569241660009" duration="440000" />
       <workItem from="1569242113856" duration="4687000" />
       <workItem from="1569504411776" duration="4769000" />
+      <workItem from="1569844325475" duration="7047000" />
     </task>
     <servers />
   </component>

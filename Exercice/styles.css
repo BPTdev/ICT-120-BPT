@@ -1,0 +1,18 @@
+div {
+    padding : 5px;
+    margin: 5px;
+    border: solid 1px black;
+    width: fit-content;
+}
+.cssbleutrace{
+    background: lightblue;
+    text-decoration: line-through ;
+}
+.csshover{
+    font-family: Arial;
+}
+.cssyes{
+    color: white;
+    background: springgreen;
+    border: 0px ;
+}
