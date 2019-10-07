@@ -30,8 +30,8 @@
 <div>
     Quand l'utilisateur tape son nom, le champ initiales se remplit automatiquement
     <form>
-        Nom: <input id="txtName" type="text"><br>
-        Initiales: <input name="txtInitials" type="text"><br>
+        Nom: <input id="txtName" type="text"/><br>
+        Initiales: <input id="txtInitials" type="text"><br>
         <input type="submit" value="Ok">
     </form>
 </div>
@@ -73,10 +73,13 @@
             </ul>
         </li>
     </ul>
-    <button>A vos marques</button>
-    <button>Prêt</button>
-    <button>Partez</button><br>
-    <img src="empty.png">
+    <button id="avm" >A vos marques</button>
+    <button id="pre"disabled>Prêt</button>
+    <button id="par" disabled>Partez</button><br>
+    <img id="img1" src="images/empty.png">
+    <img id="img2" src="images/marks.png">
+    <img id="img3" src="images/set.png">
+    <img id="img4" src="images/go.png">
 </div>
 </body>
 </html>
