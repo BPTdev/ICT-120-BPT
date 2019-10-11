@@ -19,7 +19,11 @@ yes2.addEventListener('click', funyes);
 txtchange.addEventListener('keyup', funnom);
 avm.addEventListener('click', funavm);
 pre.addEventListener('click', funpre);
+par.addEventListener('click',funpar);
 par.style.display="none";
+img2.style.display="none";
+img3.style.display="none";
+img4.style.display="none";
 function funbleu() {
     bleu.classList.add('cssbleutrace')
 }
@@ -62,24 +66,43 @@ function funnom() {
 
 function funavm() {
     console.log('etape 1');
-    document.getElementById('avm').disabled = true;
-    document.getElementById('pre').disabled = false;
-    document.getElementById('par').disabled = true;
-    par.style.display="block";
-    par.style.display="block";
-    par.style.display="block";
-    par.style.display="block";
+    avm.disabled = true;
+    pre.disabled = false;
+    par.disabled = true;
+
     pre.style.disabled = true;
     par.style.disabled = false;
+    par.style.display="inline";
+    img1.style.display="none";
+    img2.style.display="inline";
 }
 
 function funpre() {
     avm.style.display="none";
-    document.getElementById('pre').disabled = true;
-    document.getElementById('par').disabled = false;
+    pre.disabled = true;
+    par.disabled = false;
+    img2.style.display="none";
+    img3.style.display="inline";
 }
 
 function funpar() {
-    avm.style.display="block";
-    .style.display="block";
+    par.disabled = true;
+    console.log('parter ok');
+    avm.style.display="none";
+    pre.style.display="none";
+    img3.style.display="none";
+    img4.style.display="inline";
+    setTimeout(fungo,3000)
+
+}
+function fungo(){
+
+    avm.disabled = false;
+    avm.style.display="inline";
+    pre.style.display="inline";
+    pre.style.disabled = true;
+    par.style.display="none";
+    img4.style.display="none";
+    img1.style.display="inline";
+
 }
