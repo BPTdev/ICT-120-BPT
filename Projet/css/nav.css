@@ -1,0 +1,78 @@
+
+.navtxt{
+  float: right;
+  margin-top: 12px;
+  padding-left: 29px;
+  color: #009036;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(248deg,ghostwhite,yellow,red,cyan);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+.wrapper2 {
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(248deg,darkviolet,springgreen,dodgerblue);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.tbl_header{
+  margin: auto;
+  width: 80%;
+
+}
+.header{
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+  top: 0;
+}
+.test{
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7Bv2MMB8WSwjwJnmf4rqEELzp2ShUF3VZzJ0Q6RLKD4Kzdo7");
+}
+.logoheader{
+margin-top: 25px;
+}
