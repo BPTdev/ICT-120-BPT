@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,22 +7,43 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/nav.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/js.css">
+  <script src="../js/index.js" ></script>
   <body>
   <div class="wrapper"></div>
-    <header class="header">
-          <div class="nav">
-            <div class="logoheader">
-              <img src="../images/logo_cpnv.png" width="300" alt="Logo CPNV">
-            </div>
-            <div class="navtab">
-              <button id="cmd1" class="wrapper2"><a href="index.html">Participant</a></button>
-              <button id="cmd2" class="wrapper2"><a href="#">Activité</a></button>
-              <button id="cmd3" class="wrapper2"><a href="#">Transitalie</a></button>
-              <button id="cmd4" class="wrapper2"><a href="#">hébergement</a></button>
-            </div>
-         </div>
-    </header>
+  <header class="header">
+    <div class="nav">
+      <nav class="navbar transparent">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="../images/logo_cpnv.png" width="300" alt="Logo CPNV">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
+            <ul class="nav navbar-nav navtxt">
+              <li class="nav-item">
+                <button id="cmd1" class="button"><a href="index.html">Participant</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="cmd2" class="button"><a href="#">Activité</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="cmd3" class="button"><a href="#">Transport</a></button>
+              </li>
+              <li class="nav-item">
+                <button id="cmd4" class="button"><a href="#">Hébergement</a></button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
   </body>
 </html>

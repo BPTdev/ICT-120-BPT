@@ -3,17 +3,22 @@
  float: left;
 }
 #cmd1{
-  width: 14%;
+  width: 170px;
   float: right;
   margin-right: 3%;
 }
 #cmd2{
-  width: 14%;
+  width: 140px;
   float: right;
   margin-right: 3%;
 }
 #cmd3{
-  width: 14%;
+  width: 170px;
+  float: right;
+  margin-right: 3%;
+}
+#cmd4{
+  width: 210px;
   float: right;
   margin-right: 3%;
 }
