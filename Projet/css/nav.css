@@ -1,6 +1,7 @@
 body{
     font-family: impact;
 }
+
 .navtxt{
     float: right;
     margin-top: 12px;
@@ -44,7 +45,6 @@ body{
     100%{background-position:0% 82%}
 }
 .button {
-  position: relative;
   background-color: #4CAF50;
     border: #FFFFFF;
   border: none;
