@@ -1,26 +1,57 @@
-.logoheader{
- margin-left: 45px;
- float: left;
+body{
+  margin-top: 90px;
 }
-#cmd1{
-  width: 170px;
-  float: right;
-  margin-right: 3%;
+.logo{
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 15px;
 }
-#cmd2{
-  width: 140px;
-  float: right;
-  margin-right: 3%;
+.navtransport{
+  text-align: center;
+  margin-top: 50px;
 }
-#cmd3{
-  width: 170px;
-  float: right;
-  margin-right: 3%;
+.cmd1{
+  margin-right: 2%;
 }
-#cmd4{
-  width: 210px;
-  float: right;
-  margin-right: 3%;
+.cmd2{
+  margin-right: 2%;
 }
-
-
+.cmd3{
+  margin-right: 2%;
+}
+.cmd4{
+  margin-right: 2%;
+}
+.formulaire{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  height: 80px;
+}
+.aller{
+  width: 100%;
+}
+.public_transport{
+  width: 100%;
+}
+.retour{
+  width: 100%;
+}
+button{
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 2.2em;
+  transition: 0.5s;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+button:hover {
+  background-color: #A1DDA4;
+}
+button:active{
+  text-decoration: underline;
+}
+#cbx{
+  padding-left: -75px;
+}

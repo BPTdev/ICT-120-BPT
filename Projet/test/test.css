@@ -8,6 +8,7 @@
   padding-left: 10px;
   background-color: lightgrey;
   margin-left: 100px;
+  margin-top: 100px;
   text-align: center;
   z-index: 99;
 }
@@ -27,6 +28,21 @@
 .cmd4{
   margin-right: 2%;
 }
+.formulaire{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  height: 80px;
+}
+.aller{
+  width: 100%;
+}
+.public_transport{
+  width: 100%;
+}
+.retour{
+  width: 100%;
+}
 button{
   border: none;
   background-color: #4CAF50;
@@ -37,8 +53,11 @@ button{
   margin-bottom: 5px;
 }
 button:hover {
-  background-color: black;
+  background-color: #A1DDA4;
 }
 button:active{
-  color: #4CAF50;
+  text-decoration: underline;
+}
+#cbx{
+  padding-left: -75px;
 }

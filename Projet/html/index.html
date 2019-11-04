@@ -1,49 +1,93 @@
 ﻿<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/js.css">
-  <script src="../js/index.js" ></script>
-  <body>
-  <div class="wrappéer"></div>
-  <header class="header">
-    <div class="nav">
-      <nav class="navbar transparent">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <img src="../images/logo_cpnv.png" width="300" alt="Logo CPNV">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-          </div>
-          <div class="collapse navbar-collapse navbar-custom" id="myNavbar">
-            <ul class="nav navbar-nav navtxt">
-              <li class="nav-item">
-                <button id="cmd1" class="button btn"><a href="index.html">Participant</a></button>
-              </li>
-              <li class="nav-item">
-                <button id="cmd2" class="button btn"><a href="#">Activité</a></button>
-              </li>
-              <li class="nav-item">
-                <button id="cmd3" class="button btn"><a href="#">Transport</a></button>
-              </li>
-              <li class="nav-item">
-                <button id="cmd4" class="button btn"><a href="#">Hébergement</a></button>
-              </li>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/nav.css" rel="stylesheet">
+<script src="../js/index.js"></script>
+<body>
+<div class="wrapper"></div>
 
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  </body>
+<div class="logo">
+  <img alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+</div>
+<div class="navtransport">
+  <button class="cmd1" name="Transport" type="button">Transport</button>
+  <button class="cmd2" name="Participant" type="button">Participant</button>
+  <button class="cmd3" name="Activité" type="button">Activité</button>
+  <button class="cmd4" name="Hébergement" type="button">Hébergement</button>
+</div>
+<div class="formulaire">
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <form class="public_transport" action="">
+      <label for="pubtrs">Moyen : </label>
+      <input class="col-9" id="pubtrs" list="public_transport" name="public_transport">
+      <datalist id="public_transport">
+        <option value=""selected="selected" hidden="hidden">Moyen</option>
+        <option value="Metro">
+        <option value="Avion">
+        <option value="Bus">
+        <option value="Train">
+      </datalist>
+    </form>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <form class="aller" action="">
+      <label for="alle">Aller : </label>
+      <input class="col-9" id="alle" list="aller" name="public_transport">
+      <datalist id="aller">
+        <option value=""selected="selected" hidden="hidden">Aller</option>
+        <option value="Pékin">
+        <option value="Genève">
+      </datalist>
+    </form>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <form class="retour" id="rtr" action="">
+      <label for="rtr">Retour : </label>
+      <input class="col-9" list="retour" name="public_transport">
+      <datalist id="retour">
+        <option value=""selected="selected" hidden="hidden">Retour</option>
+        <option value="Genève">
+        <option value="Pékin">
+      </datalist>
+    </form>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 infoflight1">
+    <form action="">
+      <p>Type :</p><input type="text" name="typeplane" placeholder="Model d'avion">
+      <p>Nombre de place :</p><input type="text" name="nbrseat" placeholder="354">
+      <p>Numéro de vol :</p><input type="text" name="nbrflight" placeholder="SWR-3463">
+    </form>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 infoflight2">
+    <form action="">
+      <p>Companie :</p><input type="text" name="company" placeholder="Luftanza">
+      <p>Durée :</p><input type="text" name="time" placeholder="4:50">
+      <p>Départ :</p><input type="text" name="departure" placeholder="17:20">
+      <p>Arrivée :</p><input type="text" name="arrival" placeholder="22:10">
+    </form>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <img src="../images/Capture.PNG" width="100%" alt="maps flight">
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 infopepole">
+    <form action="">
+      <p>Pièce d'indentité :</p><input type="text" name="company" placeholder="Luftanza">
+      <p>Numéro d'identité :</p><input type="text" name="time" placeholder="4:50"><br>
+      <input type="checkbox" id="mdt" name="scales">
+      <label for="mdt">Mal des transports</label>
+      <input type="checkbox" id="ptv" name="scales">
+      <label for="ptv">Petite vessie</label>
+      <input type="checkbox" id="" name="scales">
+      <label for=""></label>
+      <input type="checkbox" id="pda" name="scales">
+      <label for="pda">Peur de l'avion</label>
+    </form>
+  </div>
+</div>
+</body>
 </html>
