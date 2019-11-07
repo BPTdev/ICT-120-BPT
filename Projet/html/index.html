@@ -9,24 +9,23 @@
 <link href="../css/nav.css" rel="stylesheet">
 <script src="../js/index.js"></script>
 <body>
-<div class="wrapper"></div>
-
-<div class="logo">
-  <img alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 logo">
+  <img class="logo" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
 </div>
 <div class="navtransport">
-  <button class="cmd1" name="Transport" type="button">Transport</button>
-  <button class="cmd2" name="Participant" type="button">Participant</button>
-  <button class="cmd3" name="Activité" type="button">Activité</button>
-  <button class="cmd4" name="Hébergement" type="button">Hébergement</button>
+  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd1" name="Transport" type="button">Transport</button>
+  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd2" name="Participant" type="button">Participant</button>
+  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd3" name="Activité" type="button">Activité</button>
+  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd4" name="Hébergement" type="button">Hébergement</button>
 </div>
-<div class="formulaire">
+
+<div class="col-12 formulaire">
   <div class="col-lg-4 col-md-4 col-sm-12">
     <form class="public_transport" action="">
-      <label for="pubtrs">Moyen : </label>
+      <label class="col-3" for="pubtrs">Moyen : </label>
       <input class="col-9" id="pubtrs" list="public_transport" name="public_transport">
       <datalist id="public_transport">
-        <option value=""selected="selected" hidden="hidden">Moyen</option>
+        <option selected="selected" hidden="hidden">Moyen</option>
         <option value="Metro">
         <option value="Avion">
         <option value="Bus">
@@ -34,9 +33,10 @@
       </datalist>
     </form>
   </div>
+
   <div class="col-lg-4 col-md-4 col-sm-12">
     <form class="aller" action="">
-      <label for="alle">Aller : </label>
+      <label class="col-3" for="alle">Aller : </label>
       <input class="col-9" id="alle" list="aller" name="public_transport">
       <datalist id="aller">
         <option value=""selected="selected" hidden="hidden">Aller</option>
@@ -47,7 +47,7 @@
   </div>
   <div class="col-lg-4 col-md-4 col-sm-12">
     <form class="retour" id="rtr" action="">
-      <label for="rtr">Retour : </label>
+      <label class="col-3" for="rtr">Retour : </label>
       <input class="col-9" list="retour" name="public_transport">
       <datalist id="retour">
         <option value=""selected="selected" hidden="hidden">Retour</option>
@@ -58,17 +58,17 @@
   </div>
   <div class="col-lg-6 col-md-6 col-sm-12 infoflight1">
     <form action="">
-      <p>Type :</p><input type="text" name="typeplane" placeholder="Model d'avion">
-      <p>Nombre de place :</p><input type="text" name="nbrseat" placeholder="354">
-      <p>Numéro de vol :</p><input type="text" name="nbrflight" placeholder="SWR-3463">
+      <p>Type :</p><input type="text" name="typeplane" placeholder="(Model d'avion)">
+      <p>Nombre de place :</p><input type="text" name="nbrseat" placeholder="(354)">
+      <p>Numéro de vol :</p><input type="text" name="nbrflight" placeholder="(SWR-3463)">
     </form>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-12 infoflight2">
     <form action="">
-      <p>Companie :</p><input type="text" name="company" placeholder="Luftanza">
-      <p>Durée :</p><input type="text" name="time" placeholder="4:50">
-      <p>Départ :</p><input type="text" name="departure" placeholder="17:20">
-      <p>Arrivée :</p><input type="text" name="arrival" placeholder="22:10">
+      <p>Companie :</p><input type="text" name="company" placeholder="(Luftanza)">
+      <p>Durée :</p><input type="text" name="time" placeholder="(4:50)">
+      <p>Départ :</p><input type="text" name="departure" placeholder="(17:20)">
+      <p>Arrivée :</p><input type="text" name="arrival" placeholder="(22:10)">
     </form>
   </div>
   <div class="col-lg-12 col-md-12 col-sm-12">
@@ -76,8 +76,8 @@
   </div>
   <div class="col-lg-12 col-md-12 col-sm-12 infopepole">
     <form action="">
-      <p>Pièce d'indentité :</p><input type="text" name="company" placeholder="Luftanza">
-      <p>Numéro d'identité :</p><input type="text" name="time" placeholder="4:50"><br>
+      <p>Pièce d'indentité :</p><input type="text" name="company" placeholder="(BPT)">
+      <p>Numéro d'identité :</p><input type="text" name="time" placeholder="(5646556>WEH3PD3456542)"><br>
       <input type="checkbox" id="mdt" name="scales">
       <label for="mdt">Mal des transports</label>
       <input type="checkbox" id="ptv" name="scales">
@@ -86,6 +86,14 @@
       <label for=""></label>
       <input type="checkbox" id="pda" name="scales">
       <label for="pda">Peur de l'avion</label>
+    </form>
+  </div>
+  <div class="col-12">
+    <form action="">
+      <input type="button" id="cmdherestartyes">
+      <label for="cmdherestartyes">Pésence au départ</label>
+      <input type="button" id="cmdherearrivatyes">
+      <label for="cmdherearrivatyes">Pésence à l'arrivée</label>
     </form>
   </div>
 </div>
