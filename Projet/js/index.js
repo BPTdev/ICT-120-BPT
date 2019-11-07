@@ -1,25 +1,22 @@
 document.addEventListener('DOMContentLoaded',init);
 function init() {
-    navitem.addEventListener('mouseout',linkwhite());
-    navitem.addEventListener('mouseover',linkgreen());
+    logo1.addEventListener('click',changecolor1);
+    logo2.addEventListener('click',changecolor2);
 }
-function linkwhite() {
-    cmd1.classList.remove('linkgreen');
-    cmd2.classList.remove('linkgreen');
-    cmd3.classList.remove('linkgreen');
-    cmd4.classList.remove('linkgreen');
-    cmd1.classList.add('linkwhite');
-    cmd2.classList.add('linkwhite');
-    cmd3.classList.add('linkwhite');
-    cmd4.classList.add('linkwhite');
+function changecolor1() {
+        cmdherestartno.classList.remove('colorclassic');
+        cmdherestartno.classList.add('colormarwan');
+        cmdherearrivatno.classList.remove('colorclassic');
+        cmdherearrivatno.classList.add('colormarwan');
+        logo1.classList.add('d-none');
+        logo2.classList.remove('d-none');
 }
-function linkgreen() {
-    cmd1.classList.remove('linkwhite');
-    cmd2.classList.remove('linkwhite');
-    cmd3.classList.remove('linkwhite');
-    cmd4.classList.remove('linkwhite');
-    cmd1.classList.add('linkgreen');
-    cmd2.classList.add('linkgreen');
-    cmd3.classList.add('linkgreen');
-    cmd4.classList.add('linkgreen');
+function changecolor2() {
+
+        cmdherestartno.classList.add('colorclassic');
+        cmdherestartno.classList.remove('colormarwan');
+        cmdherearrivatno.classList.add('colorclassic');
+        cmdherearrivatno.classList.remove('colormarwan');
+        logo2.classList.add('d-none');
+        logo1.classList.remove('d-none');
 }
