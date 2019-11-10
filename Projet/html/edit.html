@@ -1,0 +1,55 @@
+<!--
+Auteur: Benoît Pierrehumbert
+Date: 10/11/2019
+Projet: Site Trensport voyage d'étude
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDIT</title>
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/nav.css" rel="stylesheet">
+<script src="../js/index.js"></script>
+
+<body>
+<div class="col-12 logo">
+    <img class="logo " id="logo1" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+    <img class="logo d-none " id="logo2" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+
+</div>
+<div class="login ">
+    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Password">
+    <button class="cmdlogin"><a href="index.html">Login</a> </button>
+</div>
+<div class="tableedition">
+    <button class="btn-primary col-3" id="cmdedit">Editer</button>
+    <button class="btn-primary d-none col-3" id="finishedit">Terminer</button>
+    <button class="btn-success d-none col-3" id="cmdadd">Ajouter</button>
+    <button class="btn-danger d-none col-3" id="changevalue">Modifier</button>
+    <button class="btn-success d-none col-3" id="savevalue">Enregistrer</button>
+</div>
+    <table>
+        <thead>
+            <th>Type :</th>
+            <th>Départ :</th>
+            <th>Arrivée :</th>
+            <th>Modèle :</th>
+            <th>Nombre de place :</th>
+            <th>Numéro de vol :</th>
+            <th>Companie :</th>
+            <th>Durée :</th>
+            <th>Heure de départ :</th>
+            <th>Heure d' arrivée : </th>
+            <th>Supprimer</th>
+        </thead>
+        <tbody id="tbltransport">
+
+        </tbody>
+    </table>
+</body>
+</html>

@@ -30,10 +30,10 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Exercice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.User-Defined File Types" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,6 +94,11 @@
       <workItem from="1572870791435" duration="11340000" />
       <workItem from="1573111553373" duration="4335000" />
       <workItem from="1573122048038" duration="9006000" />
+      <workItem from="1573157009887" duration="4713000" />
+      <workItem from="1573336266921" duration="4215000" />
+      <workItem from="1573389385658" duration="12004000" />
+      <workItem from="1573410899962" duration="5288000" />
+      <workItem from="1573421788503" duration="1901000" />
     </task>
     <servers />
   </component>
