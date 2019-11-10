@@ -93,3 +93,9 @@ a:active {
 #lufthansa{
     color: black;
 }
+.disabledprimary{
+    background-color: #0a2613;
+}
+.disableddanger{
+    background-color: #2e0b10;
+}

@@ -16,7 +16,8 @@ function init() {
     cmdherestartno.addEventListener('click',startyes);
     cmdherearrivatyes.addEventListener('click',arrivatno);
     cmdherearrivatno.addEventListener('click',arrivatyes);
-
+    cmdadd.disabled=true;
+    changevalue.disabled=true;
 }
 function funchangecolor1() {
         cmdherestartno.classList.remove('colorclassic');
@@ -38,8 +39,18 @@ function funchangecolor2() {
 function funedit() {
         cmdedit.classList.add('d-none');
         finishedit.classList.remove('d-none');
-        cmdadd.classList.remove('d-none');
-        changevalue.classList.remove('d-none');
+        cmdadd.disabled=false;
+        cmdadd.classList.remove('disabledprimary');
+        changevalue.disabled=false;
+        changevalue.classList.remove('disableddanger');
+}
+function funfinishedit() {
+        cmdedit.classList.remove('d-none');
+        finishedit.classList.add('d-none');
+        cmdadd.disabled=true;
+        cmdadd.classList.add('disabledprimary');
+        changevalue.disabled=true;
+        changevalue.classList.add('disableddanger');
 }
 function edit() {
         nbtd=tbltransport.children.length;
@@ -56,6 +67,7 @@ function edit() {
         }
         changevalue.classList.add('d-none');
         cmdadd.classList.add('d-none');
+        finishedit.classList.add('d-none');
         savevalue.classList.remove('d-none');
 }
 function save() {
@@ -69,14 +81,10 @@ function save() {
         }
         savevalue.classList.add('d-none');
         changevalue.classList.remove('d-none');
+        finishedit.classList.remove('d-none');
         cmdadd.classList.remove('d-none');
 }
-function funfinishedit() {
-        cmdedit.classList.remove('d-none');
-        finishedit.classList.add('d-none');
-        cmdadd.classList.add('d-none');
-        changevalue.classList.add('d-none');
-}
+
 function funaddline(){
         newtr = document.createElement('tr');
         newtd1 = document.createElement('td');
