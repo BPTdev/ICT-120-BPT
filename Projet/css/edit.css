@@ -1,0 +1,15 @@
+/*
+Auteur: Benoît Pierrehumbert
+Date: 10/11/2019
+Projet: Site Trensport voyage d'étude
+*/
+table{
+    border: 1px groove;
+    border-color: #5a6268;
+}
+th{
+    border: 1px groove;
+}
+td{
+     border: 1px groove;
+ }

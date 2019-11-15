@@ -1,124 +1,201 @@
-﻿<!DOCTYPE html>
+﻿<!--
+Auteur: Benoît Pierrehumbert
+Date: 10/11/2019
+Projet: Site Trensport voyage d'étude
+-->
+<!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
   <meta charset="utf-8">
   <title>Home</title>
+  <script src="../js/test.js"></script>
+  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+  <link href="../css/index.css" rel="stylesheet">
+  <link href="../css/nav.css" rel="stylesheet">
+  <script src="../js/index.js"></script>
 </head>
-<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
-<link href="../css/index.css" rel="stylesheet">
-<link href="../css/nav.css" rel="stylesheet">
-<script src="../js/index.js"></script>
-<body>
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo">
-  <img class="logo" id="logo1" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
-  <img class="logo d-none" id="logo2" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 navtransport">
-  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd1" name="Transport" type="button">Transport</button>
-  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd2" name="Participant" type="button">Participant</button>
-  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd3" name="Activité" type="button">Activité</button>
-  <button class="col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd4" name="Hébergement" type="button">Hébergement</button>
-</div>
-<div class="col-12 formulaire">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <form class="public_transport" action="">
-      <label class="col-3" for="pubtrs">Moyen : </label>
-      <input class="col-9" id="pubtrs" list="public_transport" name="public_transport">
-      <datalist id="public_transport">
-        <option selected="selected" hidden="hidden">Moyen</option>
-        <option value="Metro">
-        <option value="Avion">
-        <option value="Bus">
-        <option value="Train">
-      </datalist>
-    </form>
-  </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <form class="aller" action="">
-      <label class="col-3" for="alle">Aller : </label>
-      <input class="col-9" id="alle" list="aller" name="public_transport">
-      <datalist id="aller">
-        <option value=""selected="selected" hidden="hidden">Aller</option>
-        <option value="Pékin">
-        <option value="Genève">
-      </datalist>
-    </form>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <form class="retour" id="rtr" action="">
-      <label class="col-3" for="rtr">Retour : </label>
-      <input class="col-9" list="retour" name="public_transport">
-      <datalist id="retour">
-        <option value=""selected="selected" hidden="hidden">Retour</option>
-        <option value="Genève">
-        <option value="Pékin">
-      </datalist>
-    </form>
-  </div>
-  <div class="col-lg-6 col-md-6 col-sm-12 infoflight1">
-    <form action="">
-      <p>Type :</p><input type="text" name="typeplane" placeholder="(Model d'avion)">
-      <p>Nombre de place :</p><input type="text" name="nbrseat" placeholder="(354)">
-      <p>Numéro de vol :</p><input type="text" name="nbrflight" placeholder="(SWR-3463)">
+
+<body>
+<div class="col-12 logo">
+  <img class="logo " id="logo1" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+  <img class="logo d-none " id="logo2" alt="Logo CPNV" src="../images/logo_cpnv.png" width="280px">
+
+</div>
+<div class="login">
+  <input type="text" placeholder="Email">
+  <input type="text" placeholder="Password">
+  <button class="cmdlogin"><a href="edit.html">Login</a> </button>
+</div>
+<div class="col-12 test2 navtransport">
+  <button class="col col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd" name="Transport" type="button">Transports</button>
+  <button class="col col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd" name="Participant" type="button">Participants</button>
+  <button class="col col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd" name="Activité" type="button">Activités</button>
+  <button class="col col-lg-3 col-md-6 col-sm-12 col-xs-12 cmd" name="Hébergement" type="button">Hébergement</button>
+</div>
+<div class="lignevide"></div>
+<!--          NAV EN HAUT  FORM EN BAS                     -->
+<div class="row col-12 formulaires">
+
+  <div class="row listboxs col-12">
+    <div class="col-12">
+      <form class="public_transport" action="">
+        <label class="col-3" for="pubtrs">Moyen : </label>
+        <input class="col-9" id="pubtrs" list="public_transport" name="public_transport">
+        <datalist id="public_transport">
+          <option selected="selected" hidden="hidden">Moyen</option>
+          <option value="Metro">
+          <option value="Avion">
+          <option value="Bus">
+          <option value="Train">
+        </datalist>
+      </form>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <form class="aller" action="">
+        <label class="col-3" for="alle">Départ: </label>
+        <input class="col-9" id="alle" list="aller" name="public_transport">
+        <datalist id="aller">
+          <option value=""selected="selected" hidden="hidden">Aller</option>
+          <option value="Pékin">
+          <option value="Genève">
+        </datalist>
+      </form>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <form class="retour" id="rtr" action="">
+        <label class="col-3" for="rtr">Arrivée:</label>
+        <input class="col-9" list="retour" name="public_transport">
+        <datalist id="retour">
+          <option value=""selected="selected" hidden="hidden">Retour</option>
+          <option value="Genève">
+          <option value="Pékin">
+        </datalist>
+      </form>
+    </div>
+  </div><!--           OK            -->
+  <div class="lignevide col-12"><hr></div>
+  <div class="col col-lg-6 col-md-6 col-sm-12 infoflight1">
+    <form action="" id="infoflight1">
+      <label for="typeplane">Type : </label>
+      <input type="text" id="typeplane" placeholder="(Model d'avion)"><br>
+
+      <label for="nbrseat">Nombre de place :</label>
+      <input type="text" id="nbrseat" placeholder="(354)"><br>
+
+      <label for="nbrflight">Numéro de vol :</label>
+      <input type="text" id="nbrflight" placeholder="(SWR-3463)">
     </form>
   </div><!-- indo transport -->
-  <div class="col-lg-6 col-md-6 col-sm-12 infoflight2">
+  <!--           OK            -->
+  <div class="col col-lg-6 col-md-6 col-sm-12 infoflight2">
     <form action="">
-      <p>Companie :</p><input type="text" name="company" placeholder="(Luftanza)">
-      <p>Durée :</p><input type="text" name="time" placeholder="(4:50)">
-      <p>Départ :</p><input type="text" name="departure" placeholder="(17:20)">
-      <p>Arrivée :</p><input type="text" name="arrival" placeholder="(22:10)">
+      <label for="company">Companie :</label>
+      <input type="text" id="company" placeholder="(Luftanza)"><br>
+
+      <label for="company">Durée :</label>
+      <input type="text" id="time" placeholder="(4:50)"><br>
+
+      <label for="departure">Départ :</label>
+      <input type="text" id="departure" placeholder="(17:20)"><br>
+
+      <label for="arrival">Arrivée :</label>
+      <input type="text" id="arrival" placeholder="(22:10)"><br>
     </form>
   </div><!-- info avion -->
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <img src="../images/Capture.PNG" width="100%" alt="maps flight">
+  <!--           OK            -->
+  <hr>
+  <div class="maps col-12">
+    <div class="col-12">
+      <img src="../images/Capture.PNG" width="100%" alt="maps flight">
+    </div>
   </div><!-- maps -->
-  <div class="col-lg-12 col-md-12 col-sm-12 infopepole">
-    <form action="">
-      <p>Pièce d'indentité :</p><input type="text" name="company" placeholder="(BPT)">
-      <p>Numéro d'identité :</p><input type="text" name="time" placeholder="(5646556>WEH3PD3456542)"><br>
+  <hr>
+  <div class="col-12">
+    <label class="" for="rtr">Pièce d'identité:</label>
+    <input class="" list="identity" name="public_transport"><br>
+    <datalist id="identity">
+      <option value="BPT">
+      <option value="DMI">
+      <option value="DRT">
+      <option value="SRD">
+      <option value="XCL">
+      <option value="AZI">
+    </datalist>
+    <label for="nbidentity">Numéro d'identité :</label>
+    <input type="text" id="nbidentity" placeholder="5646815651561>AZD5645DSS"><br>
+  </div>
+  <div class="infopepole col-12">
+    <div class="row col-12 test ">
       <div class="col-6">
-        <input type="checkbox" id="ctp" name="ctp">
-        <label for="ctp">Clostophobie</label></div>
-      <div class="col-6">
-        <input type="checkbox" id="ptv" name="ptv">
-        <label for="ptv">Petite vessie</label>
-      </div>
-      <div class="col-6">
-        <input type="checkbox" id="mdt" name="mdt">
-        <label for="mdt">Mal des transports</label>
-      </div>
-      <div class="col-6">
-        <input type="checkbox" id="pda" name="pda">
-        <label for="pda">Peur de l'avion</label>
+        <form action="">
+          <input type="checkbox" id="ctp" name="ctp">
+          <label for="ctp">Clostophobie</label>
+        </form>
       </div>
 
-    </form>
-  </div><!-- Identité + checkbox -->
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <form action="">
-      <div class="col-12 herestart">
-        <label for="cmdherestartyes">Pésence au départ</label>
-        <input type="button" class="btn btn-success" id="cmdherestartyes" value="OUI">
-        <input type="button" class="btn colorclassic" id="cmdherestartno" value="NON">
+      <div class="col-6">
+        <form action="">
+          <input type="checkbox" id="ptv" name="ptv">
+          <label for="ptv">Petite vessie</label>
+        </form>
+
       </div>
-      <div class="col-12 herearivat">
-        <label for="cmdherearrivatyes">Pésence à l'arrivée</label>
-        <input type="button" class="btn btn-success" id="cmdherearrivatyes" value="OUI">
-        <input type="button" class="btn colorclassic" id="cmdherearrivatno" value="NON">
+      <div class="col-6">
+        <form action="">
+          <input type="checkbox" id="mdt" name="mdt">
+          <label for="mdt">Mal des transports</label>
+        </form>
       </div>
-    </form>
-  </div><!-- présence -->
-  <div>
+      <div class="col-6">
+        <form action="">
+          <input type="checkbox" id="pda" name="pda">
+          <label for="pda">Peur de l'avion</label>
+        </form>
+      </div>
+    </div><!-- Identité + checkbox -->
+    <hr>
+    <div class="col-12">
+      <form action="">
+        <div class="col-12 herestart">
+          <label for="cmdherestartyes">Pésence au départ</label>
+          <input type="button" class="btn btn-success" id="cmdherestartyes" value="OUI">
+          <input type="button" class="btn colorclassic" id="cmdherestartno" value="NON">
+        </div>
+        <div class="col-12 herearivat">
+          <label for="cmdherearrivatyes">Pésence à l'arrivée</label>
+          <input type="button" class="btn btn-success" id="cmdherearrivatyes" value="OUI">
+          <input type="button" class="btn colorclassic" id="cmdherearrivatno" value="NON">
+        </div>
+      </form>
+    </div><!-- présence -->
+    <hr>
+
+  </div><!-- info for pepole -->
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
     <form action="">
-      <label class="col-3" for="typetransport">Moyen : </label>
-      <input class="col-9" id="typetransport" list="public_transport" name="public_transport">
-      <p>Départ :</p><input type="text" name="departur" placeholder="17H00">
-      <p>Arrivée :</p><input type="text" name="arrivat" placeholder="18H00">
-      <p>Prix par personnes :</p><input type="text" name="pricepers" placeholder="25">
+      <label class="col-3" for="departur">Départ:</label>
+      <input type="text" id="departur" placeholder="17H00"><br>
+
+      <label class="col-3" for="arrivat">Arrivée:</label>
+      <input type="text" id="arrivat" placeholder="18H00"><br>
+
+      <label class="col-4" for="pricepers">Prix par personnes:</label>
+      <input type="text"  id="pricepers" placeholder="25"><br>
     </form>
   </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <form action="">
+      <label class="col-3" for="totalprice">Prix Total :</label>
+      <input type="text" id="totalprice" placeholder="450"><br>
+
+      <label class="col-3" for="lufthansa">Lien :</label>
+      <a id="lufthansa" href="https://www.lufthansa.com">Lufthansa</a>
+    </form>
+  </div>
+
 </div>
+
 </body>
 </html>

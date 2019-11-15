@@ -1,5 +1,11 @@
+/*
+Auteur: Benoît Pierrehumbert
+Date: 10/11/2019
+Projet: Site Trensport voyage d'étude
+*/
 body{
   font-family: Arial;
+    margin-top: 10px;
 }
 .colorclassic{
   background-color: #DC3545;
@@ -13,23 +19,22 @@ body{
   text-align: center;
   margin-top: 50px;
 }
-.cmd1{
+.cmd{
   margin-right: 2%;
 }
-.cmd2{
-  margin-right: 2%;
+.login{
+    position: relative;
+    float: right;
+    margin-top: -125px;
 }
-.cmd3{
-  margin-right: 2%;
-}
-.cmd4{
-  margin-right: 2%;
-}
-.formulaire{
+.formulaires{
   text-align: center;
   width: 80%;
   margin: auto;
-  height: 80px;
+  border: 1px groove;
+  border-color: #5a6268;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 .aller{
   width: 100%;
@@ -40,21 +45,57 @@ body{
 .retour{
   width: 100%;
 }
-button{
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 2.2em;
-  transition: 0.5s;
-  border-radius: 8px;
-  margin-bottom: 5px;
+.lignevide{
+  height: 45px;
 }
-button:hover {
-  background-color: #A1DDA4;
+.infoflight2{
+  margin-bottom: 45px;
 }
-button:active{
-  text-decoration: underline;
+.maps{
+  margin-top: 45px;
+}
+.herearivat{
+    margin-top: 2px;
 }
 #cbx{
   padding-left: -75px;
+}
+button{
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 2.2em;
+    transition: 0.5s;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+button:hover {
+    background-color: #A1DDA4;
+}
+button:active{
+    text-decoration: underline;
+}
+a{
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+
+.login{
+    position: relative;
+    float: right;
+    margin-top: -125px;
+}
+#lufthansa{
+    color: black;
+}
+.disabledprimary{
+    background-color: #0a2613;
+}
+.disableddanger{
+    background-color: #2e0b10;
 }
