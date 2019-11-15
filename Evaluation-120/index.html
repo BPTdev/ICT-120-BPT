@@ -1,0 +1,27 @@
+<!--
+Auteur Benoit Pierrehumbert
+Date 15.11.2019
+Projet Examen 120
+Versoin 1
+Titre Index
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html">
+        <label class="col-4">Prénom</label><input class="" type="text" id="txtFirstName" name="txtFirstName"><div id="FNerror" class="d-none  text-danger">Invalide: trop court</div><br>
+        <label class="col-4">Nom</label><input class="" type="text" id="txtLastName" name="txtLastName"><div id="LNerror" class="d-none  text-danger">Invalide: trop court</div><br>
+        <label class="col-4">Mot de passe</label><input type="password" id="txtP1"><div id="P1error" class="d-none  text-danger">Invalide: minimum 6 caractères</div><br>
+        <label class="col-4">Confirmation</label><input type="password" id="txtP2"><div id="P2error" class="d-none  text-danger">Invalide: différent</div><br>
+        <input id="send" type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

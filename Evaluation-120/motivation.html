@@ -1,0 +1,29 @@
+<!--
+Auteur Benoit Pierrehumbert
+Date 15.11.2019
+Projet Examen 120
+Versoin 1
+Titre motivation
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <script src="js/js2.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="prenom">(prénom)</span> <span id="nom">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea id="desc" cols="60" rows="3"></textarea>
+        <div id="tropcourt">Cette description est trop courte</div>
+        <div>Il vous reste <span id="nbcarac">144</span> caractères</div>
+        <input type="submit" value="Ok">
+    </form>
+</div>
+</body>
+</html>

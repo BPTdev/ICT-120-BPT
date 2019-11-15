@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Exercice" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Evaluation-120" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.User-Defined File Types" />
@@ -94,6 +94,7 @@
       <workItem from="1572870791435" duration="11340000" />
       <workItem from="1573111553373" duration="4335000" />
       <workItem from="1573122048038" duration="9006000" />
+      <workItem from="1573801602362" duration="787000" />
     </task>
     <servers />
   </component>
